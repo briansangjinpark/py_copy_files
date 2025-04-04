@@ -30,7 +30,7 @@ Run the script using the command:
 
 `python3 recursive_file_copy.py`
 
-## Example
+### Example
 
 inventory.txt:
 
@@ -38,7 +38,7 @@ inventory.txt:
 `image.png`
 `data.csv`
 
-## Command to Run:
+### Command to Run:
 
 `python3 copy_files.py`
 
