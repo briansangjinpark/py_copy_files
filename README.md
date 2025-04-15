@@ -40,7 +40,7 @@ inventory.txt:
 
 ### Command to Run:
 
-`python3 copy_files.py`
+`python3 recursive_file_copy.py`
 
 ## Notes
 
