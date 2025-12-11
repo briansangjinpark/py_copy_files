@@ -3,6 +3,9 @@ import os
 
 # Reference Dir Paths
 
+# CPC
+cpc_cn_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/SimCorp/Use Cases/Capital Notices/Canada Post/Data'
+
 # PSP
 psp_cn_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Public Sector Pension Investment Board (PSP)/5 - Data/0 - Capital Notice'
 psp_cas_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Public Sector Pension Investment Board (PSP)/5 - Data/1 - Capital Account Statement (CAS)'
@@ -11,17 +14,23 @@ psp_soi_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io
 # SSBI 
 ssbi_cn_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/SimCorp/Use Cases/Capital Notices/Capital Call Data/StateStreet'
 
-# TRS
+# TRS - CN
 trs_cn_enri_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/3 - Data/ENRI - Energy, Natural Resources, and Infrastructure'
 trs_cn_re_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/3 - Data/RE – Real Estate'
 trs_cn_pe_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/3 - Data/PE - Private Equity'
 trs_cn_epu_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/3 - Data/EPU - External Public Markets'
+trs_cn_sop_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/4 - Data/SOP - Special Opportunities'
+
+# TRS - CAS
+trs_cas_pe_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/Capital Account Statements/4 - Data/Private Equity (PE)'
+trs_cas_re_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/Capital Account Statements/4 - Data/Real Estate (RE)'
+trs_cas_enri_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Teacher Retirement System of Texas (TRS)/Capital Account Statements/4 - Data/Energy, Natural Resources, Infrastructure (ENRI)'
 
 # source_dir = '/Users/brianpark/Library/CloudStorage/GoogleDrive-bpark@alkymi.io/Shared drives/Clients (contains client data)/Public Sector Pension Investment Board (PSP)/5 - Data/0 - Capital Notice'
-source_dir = trs_cn_epu_dir
+source_dir = trs_cas_re_dir
 
-dest_dir = '/Users/brianpark/Documents/Work/Dev/py - Copy Local Files/src/destination/TRS/Capital Notice/EPU_GapAnalysis'
-file_list_path = '/Users/brianpark/Documents/Work/Dev/py - Copy Local Files/src/file_lists/TRS/Capital Notice/Gap Analysis/EPU_GapAnalysis_07082025.txt'
+dest_dir = '/Users/brianpark/Documents/Work/Dev/py - Copy Local Files/src/destination/TRS/Capital Account Statements/Gap Analysis/RE_GapAnalysis'
+file_list_path = '/Users/brianpark/Documents/Work/Dev/py - Copy Local Files/src/file_lists/TRS/Capital Account Statements/Gap Analysis/TRS_CAS_RE_GapAnalysis_11132025.txt'
 
 # Read the list of files to copy
 with open(file_list_path, "r") as file:
